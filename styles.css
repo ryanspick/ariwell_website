@@ -88,16 +88,11 @@ img {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border: 1px solid rgba(240, 164, 58, 0.55);
+.brand-logo {
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
-  background: #241911;
-  color: var(--ember);
-  font-weight: 900;
+  object-fit: contain;
 }
 
 .site-nav {
