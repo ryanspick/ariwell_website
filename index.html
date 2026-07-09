@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Ariwell Studios creates idle RPG and loot-driven fantasy games, including Emberfall Idle and Lootburst Legends."
+      content="Ariwell Studios creates idle RPG and loot-driven fantasy games, including Emberfall Idle, Lootburst Legends, and Pixel Expedition."
     >
     <title>Ariwell Studios</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#games">Skip to games</a>
@@ -28,10 +29,16 @@
       <section class="intro" aria-labelledby="page-title">
         <p class="eyebrow">Independent idle and fantasy games</p>
         <h1 id="page-title">Ariwell Studios</h1>
-        <p class="intro-copy">
-          Small, systems-heavy games built around satisfying progress, readable fantasy worlds,
-          and that little spark of loot you want to check one more time.
-        </p>
+        <div class="intro-copy">
+          <p>
+            Ariwell Studios is an independent games studio crafting progression-focused fantasy
+            games with care, depth, and long-term player satisfaction at their core.
+          </p>
+          <p>
+            Built with passion and sharpened through iteration, our games are designed for players
+            who love discovery, systems, and the feeling of growing stronger over time.
+          </p>
+        </div>
       </section>
 
       <section class="games-section" id="games" aria-labelledby="games-title">
@@ -40,14 +47,14 @@
           <h2 id="games-title">Play our current projects</h2>
         </div>
 
-        <div class="game-grid">
+        <div class="game-grid" data-game-carousel>
           <article class="game-card emberfall">
             <figure class="game-art">
               <img
-                src="assets/emberfall-placeholder.svg"
-                alt="Placeholder artwork for Emberfall Idle"
-                width="1200"
-                height="675"
+                src="assets/emberfall_idle.PNG"
+                alt="Screenshot of Emberfall Idle"
+                width="2554"
+                height="1272"
               >
             </figure>
             <div class="game-content">
@@ -75,10 +82,10 @@
           <article class="game-card lootburst">
             <figure class="game-art">
               <img
-                src="assets/lootburst-placeholder.svg"
-                alt="Placeholder artwork for Lootburst Legends"
-                width="1200"
-                height="675"
+                src="assets/lootburst_legends.PNG"
+                alt="Screenshot of Lootburst Legends"
+                width="492"
+                height="839"
               >
             </figure>
             <div class="game-content">
@@ -102,6 +109,37 @@
               >View Lootburst Legends</a>
             </div>
           </article>
+
+          <article class="game-card expedition">
+            <figure class="game-art">
+              <img
+                src="assets/pixel_expedition.PNG"
+                alt="Screenshot of Pixel Expedition"
+                width="499"
+                height="833"
+              >
+            </figure>
+            <div class="game-content">
+              <p class="game-kicker">Pixel expedition RPG</p>
+              <h3>Pixel Expedition</h3>
+              <p>
+                A pixel fantasy expedition game with zone-based runs, stage progression, real-time
+                combat, hero collection, gear, pets, relics, daily missions, challenges, prestige,
+                and leaderboard goals.
+              </p>
+              <ul class="feature-list" aria-label="Pixel Expedition features">
+                <li>Zone and stage expeditions</li>
+                <li>Heroes, gear, pets, and relics</li>
+                <li>Prestige and leaderboards</li>
+              </ul>
+              <span class="game-link game-link-disabled" aria-disabled="true">Coming soon</span>
+            </div>
+          </article>
+        </div>
+        <div class="carousel-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </section>
 
