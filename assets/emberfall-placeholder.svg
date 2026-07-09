@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Emberfall Idle artwork placeholder</title>
+  <desc id="desc">A warm fantasy themed placeholder for future Emberfall Idle artwork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#20130c"/>
+      <stop offset="0.5" stop-color="#3b2114"/>
+      <stop offset="1" stop-color="#111318"/>
+    </linearGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M54 0H0V54" fill="none" stroke="#f0a43a" stroke-opacity="0.11" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <path d="M0 510 C175 456 255 560 430 505 S748 404 945 476 S1118 548 1200 500 V675 H0 Z" fill="#0f1717" opacity="0.9"/>
+  <path d="M141 440 L224 252 L318 440 Z" fill="#5f2f19"/>
+  <path d="M200 440 L286 186 L410 440 Z" fill="#7f3d1c"/>
+  <path d="M288 440 L378 236 L482 440 Z" fill="#3a261c"/>
+  <circle cx="870" cy="170" r="76" fill="#f0a43a" opacity="0.88"/>
+  <circle cx="870" cy="170" r="120" fill="none" stroke="#f0a43a" stroke-opacity="0.22" stroke-width="24"/>
+  <rect x="96" y="84" width="420" height="118" rx="8" fill="#101114" fill-opacity="0.72" stroke="#f0a43a" stroke-opacity="0.5"/>
+  <text x="128" y="134" fill="#f4f0e8" font-family="Arial, sans-serif" font-size="36" font-weight="700">Emberfall Idle</text>
+  <text x="128" y="174" fill="#d3b58a" font-family="Arial, sans-serif" font-size="24">Artwork placeholder</text>
+</svg>

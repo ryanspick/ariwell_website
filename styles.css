@@ -1,0 +1,377 @@
+:root {
+  color-scheme: dark;
+  --bg: #101114;
+  --bg-lift: #181a1f;
+  --panel: #202126;
+  --panel-soft: #262830;
+  --text: #f4f0e8;
+  --muted: #b9b2a5;
+  --line: rgba(244, 240, 232, 0.14);
+  --ember: #f0a43a;
+  --ember-deep: #7f3d1c;
+  --cyan: #46d6cf;
+  --pink: #e85b9a;
+  --green: #79d977;
+  --shadow: rgba(0, 0, 0, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(240, 164, 58, 0.08), transparent 260px),
+    linear-gradient(180deg, #101114 0%, #17181d 55%, #111215 100%);
+  color: var(--text);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  transform: translateY(-160%);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  padding: 8px 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(16, 17, 20, 0.88);
+  padding: 16px 32px;
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  gap: 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(240, 164, 58, 0.55);
+  border-radius: 8px;
+  background: #241911;
+  color: var(--ember);
+  font-weight: 900;
+}
+
+.site-nav {
+  gap: 8px;
+}
+
+.site-nav a {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  border-color: var(--line);
+  color: var(--text);
+}
+
+main {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.intro {
+  max-width: 760px;
+  padding: 72px 0 28px;
+}
+
+.eyebrow,
+.game-kicker {
+  margin: 0 0 10px;
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 4rem;
+  line-height: 1.02;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 1.18;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 1.65rem;
+  line-height: 1.15;
+}
+
+.intro-copy {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+  max-width: 640px;
+}
+
+.games-section {
+  padding: 28px 0 42px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.game-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 18px 44px var(--shadow);
+}
+
+.game-card.emberfall {
+  border-top: 4px solid var(--ember);
+}
+
+.game-card.lootburst {
+  border-top: 4px solid var(--pink);
+}
+
+.game-art {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-soft);
+}
+
+.game-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-content {
+  display: flex;
+  min-height: 390px;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.game-content p {
+  color: var(--muted);
+}
+
+.game-content h3 {
+  color: var(--text);
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 9px;
+  color: #ddd6ca;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.game-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 42px;
+  margin-top: auto;
+  border: 1px solid rgba(244, 240, 232, 0.2);
+  border-radius: 8px;
+  background: var(--text);
+  padding: 10px 14px;
+  color: #121316;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.game-link:hover,
+.game-link:focus-visible {
+  background: var(--ember);
+}
+
+.lootburst .game-link:hover,
+.lootburst .game-link:focus-visible {
+  background: var(--cyan);
+}
+
+.studio-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
+  gap: 32px;
+  border-top: 1px solid var(--line);
+  padding: 44px 0 64px;
+}
+
+.studio-note p:last-child {
+  align-self: end;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  padding: 22px 32px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--ember);
+}
+
+@media (max-width: 840px) {
+  .site-header {
+    padding: 14px 18px;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  .game-grid,
+  .studio-note {
+    grid-template-columns: 1fr;
+  }
+
+  .game-content {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  main {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .intro {
+    padding-top: 52px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  .intro-copy {
+    font-size: 1rem;
+  }
+
+  .game-content {
+    padding: 18px;
+  }
+
+  .feature-list li {
+    font-size: 0.82rem;
+  }
+}

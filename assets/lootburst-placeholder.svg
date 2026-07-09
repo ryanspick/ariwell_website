@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Lootburst Legends artwork placeholder</title>
+  <desc id="desc">A colorful pixel fantasy placeholder for future Lootburst Legends artwork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10113a"/>
+      <stop offset="0.48" stop-color="#30164c"/>
+      <stop offset="1" stop-color="#0b1418"/>
+    </linearGradient>
+    <pattern id="pixels" width="44" height="44" patternUnits="userSpaceOnUse">
+      <rect width="22" height="22" fill="#46d6cf" fill-opacity="0.08"/>
+      <rect x="22" y="22" width="22" height="22" fill="#e85b9a" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#pixels)"/>
+  <path d="M0 536 C132 482 255 522 384 488 C552 444 654 504 796 472 C982 430 1060 474 1200 438 V675 H0 Z" fill="#071b22" opacity="0.9"/>
+  <g transform="translate(760 170)">
+    <rect x="0" y="108" width="220" height="220" rx="8" fill="#121316" stroke="#46d6cf" stroke-opacity="0.65" stroke-width="6"/>
+    <rect x="44" y="40" width="132" height="132" rx="8" fill="#e85b9a"/>
+    <rect x="68" y="64" width="84" height="84" rx="8" fill="#f4f0e8"/>
+    <path d="M110 0 L130 42 L176 48 L142 80 L150 126 L110 104 L70 126 L78 80 L44 48 L90 42 Z" fill="#f0a43a"/>
+  </g>
+  <circle cx="610" cy="214" r="54" fill="#46d6cf" opacity="0.84"/>
+  <circle cx="690" cy="284" r="28" fill="#79d977" opacity="0.88"/>
+  <circle cx="548" cy="316" r="34" fill="#e85b9a" opacity="0.88"/>
+  <rect x="94" y="84" width="470" height="118" rx="8" fill="#101114" fill-opacity="0.72" stroke="#46d6cf" stroke-opacity="0.5"/>
+  <text x="126" y="134" fill="#f4f0e8" font-family="Arial, sans-serif" font-size="36" font-weight="700">Lootburst Legends</text>
+  <text x="126" y="174" fill="#a9f7f1" font-family="Arial, sans-serif" font-size="24">Artwork placeholder</text>
+</svg>
