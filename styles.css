@@ -333,6 +333,12 @@ h3 {
   font-size: 1.3rem;
 }
 
+.legal-page h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
 .legal-page p {
   color: var(--muted);
 }
