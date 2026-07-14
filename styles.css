@@ -12,6 +12,7 @@
   --cyan: #46d6cf;
   --pink: #e85b9a;
   --green: #79d977;
+  --purple: #9b7cf0;
   --shadow: rgba(0, 0, 0, 0.34);
 }
 
@@ -187,7 +188,7 @@ h3 {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -209,6 +210,10 @@ h3 {
 
 .game-card.expedition {
   border-top: 4px solid var(--green);
+}
+
+.game-card.rune-merge {
+  border-top: 4px solid var(--purple);
 }
 
 .game-art {
@@ -289,6 +294,11 @@ h3 {
 .expedition .game-link:hover,
 .expedition .game-link:focus-visible {
   background: var(--green);
+}
+
+.rune-merge .game-link:hover,
+.rune-merge .game-link:focus-visible {
+  background: var(--purple);
 }
 
 .game-link-disabled,
