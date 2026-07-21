@@ -188,7 +188,7 @@ h3 {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -213,6 +213,10 @@ h3 {
 }
 
 .game-card.paint-spill {
+  border-top: 4px solid var(--purple);
+}
+
+.game-card.rune-merge {
   border-top: 4px solid var(--purple);
 }
 
@@ -298,6 +302,11 @@ h3 {
 
 .paint-spill .game-link:hover,
 .paint-spill .game-link:focus-visible {
+  background: var(--purple);
+}
+
+.rune-merge .game-link:hover,
+.rune-merge .game-link:focus-visible {
   background: var(--purple);
 }
 
