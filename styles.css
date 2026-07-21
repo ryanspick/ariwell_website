@@ -212,7 +212,7 @@ h3 {
   border-top: 4px solid var(--green);
 }
 
-.game-card.rune-merge {
+.game-card.paint-spill {
   border-top: 4px solid var(--purple);
 }
 
@@ -296,8 +296,8 @@ h3 {
   background: var(--green);
 }
 
-.rune-merge .game-link:hover,
-.rune-merge .game-link:focus-visible {
+.paint-spill .game-link:hover,
+.paint-spill .game-link:focus-visible {
   background: var(--purple);
 }
 
